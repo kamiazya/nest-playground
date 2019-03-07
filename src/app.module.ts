@@ -3,9 +3,10 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { HogeController } from './hoge/hoge.controller';
 import { GwGateway } from './gw.gateway';
+import { FugaModule } from './fuga/fuga.module';
 
 @Module({
-  imports: [],
+  imports: [FugaModule],
   controllers: [AppController, HogeController],
   providers: [AppService, GwGateway],
 })
